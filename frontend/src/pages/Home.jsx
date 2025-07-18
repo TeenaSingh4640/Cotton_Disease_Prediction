@@ -114,7 +114,6 @@ const Home = () => {
                         </a>
                     </div>
 
-
                     <div className="bg-white rounded-lg shadow-lg p-6 text-center">
                         <a
                             href="/analysis"
@@ -125,7 +124,6 @@ const Home = () => {
                             <p className="text-gray-600">View detailed model performance metrics and analysis</p>
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>

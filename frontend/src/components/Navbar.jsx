@@ -1,6 +1,5 @@
 import React from 'react';
-// Remove the Leaf icon import
-// import { Leaf } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -10,25 +9,25 @@ const Navbar = () => {
                     <div className="flex items-center">
                         {/* Replace icon with your logo image */}
                         <img
-                            src="C:\Users\Lenovo\Desktop\cnnc\frontend\public\image.png"
+                            src="/image.png"
                             alt="image"
                             className="h-8 w-8 mr-2"
                         />
                         <span className="text-xl font-bold">Kisan Kranti</span>
                     </div>
                     <div className="flex space-x-4">
-                        <a href="#" className="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">
+                        <Link to="/" className="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">
                             Home
-                        </a>
-                        <a href="#" className="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">
+                        </Link>
+                        <Link to="/about" className="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">
                             About
-                        </a>
-                        <a href="#" className="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">
+                        </Link>
+                        <Link to="/contact" className="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">
                             Contact
-                        </a>
-                        <a href="/analysis" className="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">
+                        </Link>
+                        <Link to="/analysis" className="hover:bg-green-700 px-3 py-2 rounded-md text-sm font-medium">
                             AI Analysis
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
